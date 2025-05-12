@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "ab262984-9a0e-4a91-8907-53478bee1b03",
+  "name": "battle_scene_tileset",
+  "symbol": "tileset_battle_scene_tilese",
+  "width": 16,
+  "height": 7,
+  "imageWidth": 128,
+  "imageHeight": 56,
+  "filename": "battle_scene_tileset.png"
+}

@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "771aa516-d394-4a15-8489-891066b03a1b",
+  "name": "Tree_1_tileset",
+  "symbol": "tileset_tree_1_tileset",
+  "width": 16,
+  "height": 16,
+  "imageWidth": 128,
+  "imageHeight": 128,
+  "filename": "Tree_1_tileset.png"
+}

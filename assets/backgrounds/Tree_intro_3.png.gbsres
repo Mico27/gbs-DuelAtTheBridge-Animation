@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "0293f600-9279-4ea3-b77e-59351b5c976a",
+  "name": "Tree_intro_3",
+  "symbol": "bg_tree_intro_3",
+  "tileColors": "0728+00a0+0114+0264+0728+",
+  "filename": "Tree_intro_3.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

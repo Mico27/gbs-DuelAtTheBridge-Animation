@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "afeed0fb-59be-4497-8bf2-316b3aa96918",
+  "name": "ronin_final_attack_4",
+  "symbol": "bg_ronin_final_attack_4",
+  "tileColors": "0030+01c+004+0110+002+0112+00!01b+00!017+00!019+003+014+00!012+00!012+0012+012+0011+013+00f+018+00b+019+00b+019+00e+014+0010+015+0011+013+0037+",
+  "filename": "ronin_final_attack_4.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

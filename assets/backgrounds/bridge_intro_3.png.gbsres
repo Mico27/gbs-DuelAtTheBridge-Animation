@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "72fe1002-24f5-4a50-b9f2-1bb837b9bd0b",
+  "name": "bridge_intro_3",
+  "symbol": "bg_bridge_intro_3",
+  "tileColors": "8728+0414+03!0412+035+04c+034+005+043+003+044+005+0114+02b4+8728+",
+  "filename": "bridge_intro_3.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

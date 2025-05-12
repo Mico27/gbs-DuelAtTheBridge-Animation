@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "6d530ec5-a236-4d0b-afa8-4e916903dbca",
+  "name": "Intro_closup_2",
+  "symbol": "bg_intro_closup_2",
+  "tileColors": "0728+005+018+008+0111+002+0155+00f+013+0089+0728+",
+  "filename": "Intro_closup_2.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

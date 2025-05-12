@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "fd49daed-2acb-44e4-aa9b-9d2757165a02",
+  "name": "battle_scene_anim_tileset",
+  "symbol": "tileset_battle_scene_anim_t",
+  "width": 13,
+  "height": 4,
+  "imageWidth": 104,
+  "imageHeight": 32,
+  "filename": "battle_scene_anim_tileset.png"
+}

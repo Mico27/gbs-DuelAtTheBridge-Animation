@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "2a7fc7e4-f5f3-46ca-a23a-92163df12d8c",
+  "name": "ronin_final_attack_7_tileset",
+  "symbol": "tileset_ronin_final_attack__5",
+  "width": 16,
+  "height": 16,
+  "imageWidth": 128,
+  "imageHeight": 128,
+  "filename": "ronin_final_attack_7_tileset.png"
+}

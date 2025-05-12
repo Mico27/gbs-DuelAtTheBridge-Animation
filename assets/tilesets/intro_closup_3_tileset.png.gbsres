@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "fc2f2c47-f9a7-4aee-b25e-13b38ff77ef3",
+  "name": "intro_closup_3_tileset",
+  "symbol": "tileset_intro_closup_3_tile",
+  "width": 14,
+  "height": 14,
+  "imageWidth": 112,
+  "imageHeight": 112,
+  "filename": "intro_closup_3_tileset.png"
+}

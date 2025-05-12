@@ -1,0 +1,32 @@
+{
+  "_resourceType": "scene",
+  "id": "b74f2879-44b3-419a-83df-946270ce8478",
+  "_index": 28,
+  "type": "TOPDOWN",
+  "name": "Scene 29",
+  "symbol": "scene_29",
+  "x": 264,
+  "y": 1504,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "e8f3b7c6-0025-4d86-a3d3-ed6b9a0396a2",
+  "tilesetId": "15e98de7-dbd0-48a3-b697-b042f4e80233",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "d0722665-1913-420e-9c5f-373a1df9f017",
+    "68a728ef-fd0b-400d-97b7-a85a11c16c92",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "41e4f42c-1451-4b1d-bee7-e35801ad0e33"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

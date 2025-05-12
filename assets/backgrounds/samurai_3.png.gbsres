@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "9bae1351-a173-492d-9080-429dd64dd8fd",
+  "name": "samurai_3",
+  "symbol": "bg_samurai_3",
+  "tileColors": "0075+013+0011+013+0012+012+0013+01!0063+01!0012+012+009+012+007+012+009+012+00a9+",
+  "filename": "samurai_3.png",
+  "width": 20,
+  "height": 25,
+  "imageWidth": 160,
+  "imageHeight": 200
+}

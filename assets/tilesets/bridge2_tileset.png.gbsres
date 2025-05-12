@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "a64729a0-e2ac-4b4f-8ff9-5bb5cdbd83a3",
+  "name": "bridge2_tileset",
+  "symbol": "tileset_bridge2_tileset",
+  "width": 14,
+  "height": 14,
+  "imageWidth": 112,
+  "imageHeight": 112,
+  "filename": "bridge2_tileset.png"
+}

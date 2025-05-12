@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "02532522-fa38-493b-8643-48a9d20ac998",
+  "name": "final_scene_bg",
+  "symbol": "bg_final_scene_bg",
+  "tileColors": "01!0018+01!0018+01!0018+01!0018+01!0018+01!0029+01!0018+01!0018+01!0017+013+0016+013+0016+015+0014+016+0080+",
+  "filename": "final_scene_bg.png",
+  "width": 25,
+  "height": 18,
+  "imageWidth": 200,
+  "imageHeight": 144
+}

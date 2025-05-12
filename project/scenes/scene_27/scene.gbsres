@@ -1,0 +1,2623 @@
+{
+  "_resourceType": "scene",
+  "id": "1810455f-10db-4967-9fd5-c971fbfd7d74",
+  "_index": 26,
+  "type": "PLATFORM",
+  "name": "Scene 27",
+  "symbol": "scene_27",
+  "x": 96,
+  "y": 1328,
+  "width": 25,
+  "height": 18,
+  "backgroundId": "03e2fafb-9f20-4e11-b446-f0341bbda4a3",
+  "tilesetId": "ab262984-9a0e-4a91-8907-53478bee1b03",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "a496f410-a358-4faf-b128-196d46c590fe",
+    "c34048bb-33a8-41a1-af03-944ec2ca13bc",
+    "2fd59ab4-5fb9-48cd-b9ea-713acf850b8d",
+    "8318827c-f240-4f5f-a7b5-203efe357804",
+    "a80c2fc4-e55f-43c2-b933-3989d4d89cf5",
+    "",
+    "",
+    "41e4f42c-1451-4b1d-bee7-e35801ad0e33"
+  ],
+  "spritePaletteIds": [
+    "d0722665-1913-420e-9c5f-373a1df9f017",
+    "d175377a-d6d5-4793-93ed-5cc3fcd35e72",
+    "2e40eb23-8257-4b2e-84bb-b6a6de527f46",
+    "fce272ba-d585-4c27-b8e6-687056e35218"
+  ],
+  "autoFadeSpeed": null,
+  "parallax": [
+    {
+      "height": 5,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "90f0568c-3561-49d7-ba87-6997e4fdd864",
+  "script": [
+    {
+      "command": "EVENT_CAMERA_SET_POSITION",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true
+      },
+      "id": "c6537140-3f0c-4a8d-b6ff-7827b2edb595"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "5d543b47-b48c-448f-b66c-0c8726048258"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "297a4f8a-eb3b-4588-9ab5-3463441ab4b3"
+    },
+    {
+      "command": "EVENT_SET_PLATFORMER_ACTOR",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true
+      },
+      "id": "58ab7d44-5d19-4a63-ad33-767bb0aab59c"
+    },
+    {
+      "command": "EVENT_SET_PLATFORMER_ACTOR",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true
+      },
+      "id": "1423b4cd-1fdc-4038-b93a-84be3caf5cb5"
+    },
+    {
+      "command": "EVENT_OVERLAY_MOVE_TO",
+      "args": {
+        "x": 0,
+        "y": 18,
+        "speed": 0,
+        "__collapse": true
+      },
+      "id": "95d2bc36-0457-4f41-b059-74951f330bf4"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": "2",
+        "__collapse": true
+      },
+      "id": "bfa2868b-c3b1-453e-9cc8-172dc0ed1a6d"
+    },
+    {
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {
+        "__collapse": true
+      },
+      "id": "d6605a37-792d-4683-8c1f-637f39d657b5"
+    },
+    {
+      "command": "EVENT_THREAD_START",
+      "args": {
+        "variable": "T0",
+        "__scriptTabs": "true",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_LOOP",
+            "args": {},
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": {
+                      "type": "number",
+                      "value": 0.5
+                    },
+                    "frames": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "units": "frames"
+                  },
+                  "id": "80978ac7-8f90-4eb8-871a-2271a54df834"
+                },
+                {
+                  "command": "EVENT_REPLACE_TILESET_TILES",
+                  "args": {
+                    "tilesetId": "fd49daed-2acb-44e4-aa9b-9d2757165a02",
+                    "idx_target_tile": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "idx_start_tile": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "tile_length": 13
+                  },
+                  "id": "6466ca62-6b7e-4217-b0c6-0672896672b4"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": {
+                      "type": "number",
+                      "value": 0.5
+                    },
+                    "frames": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "units": "frames"
+                  },
+                  "id": "5c09faf8-c0dc-488c-8014-6a5c15903f33"
+                },
+                {
+                  "command": "EVENT_REPLACE_TILESET_TILES",
+                  "args": {
+                    "tilesetId": "fd49daed-2acb-44e4-aa9b-9d2757165a02",
+                    "idx_target_tile": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "idx_start_tile": {
+                      "type": "number",
+                      "value": 13
+                    },
+                    "tile_length": 13
+                  },
+                  "id": "3579a2cc-7c4c-4a8a-91ea-80deff0280c7"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": {
+                      "type": "number",
+                      "value": 0.5
+                    },
+                    "frames": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "units": "frames"
+                  },
+                  "id": "60f97edb-32d9-4c30-86e7-4fe9b7013f34"
+                },
+                {
+                  "command": "EVENT_REPLACE_TILESET_TILES",
+                  "args": {
+                    "tilesetId": "fd49daed-2acb-44e4-aa9b-9d2757165a02",
+                    "idx_target_tile": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "idx_start_tile": {
+                      "type": "number",
+                      "value": 26
+                    },
+                    "tile_length": 13
+                  },
+                  "id": "43450ee0-bdac-42d7-97d5-10d6e61e3118"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": {
+                      "type": "number",
+                      "value": 0.5
+                    },
+                    "frames": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "units": "frames"
+                  },
+                  "id": "5e99301e-4ad3-493e-9e3a-e8fd4ce66ab7"
+                },
+                {
+                  "command": "EVENT_REPLACE_TILESET_TILES",
+                  "args": {
+                    "tilesetId": "fd49daed-2acb-44e4-aa9b-9d2757165a02",
+                    "idx_target_tile": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "idx_start_tile": {
+                      "type": "number",
+                      "value": 39
+                    },
+                    "tile_length": 13
+                  },
+                  "id": "32636110-cde2-4476-af7a-98ddeaf99088"
+                }
+              ]
+            },
+            "id": "158fffc7-e424-4b3b-ac84-6ab53147611a"
+          }
+        ]
+      },
+      "id": "22a6d29f-77c6-4bed-b830-13d5a1d36345"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "speed": 0,
+        "__collapse": true
+      },
+      "id": "6bef0c84-ea7c-4900-9e8a-5d366b06232a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Charging",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "1252bff7-ede4-4e86-bd66-a2ae46a8539a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 60
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "4efd50d9-6122-43ae-8cd1-816ba51ecac1"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin move right"
+      },
+      "id": "8fd3a709-279b-43a9-b395-a79380db5d13"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 32
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "b119d422-c360-419f-93b4-ac69e23dc67b"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin stop moving"
+      },
+      "id": "5ed750a4-a448-4b4e-bd81-1114d51e2fd9"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__label": "Samurai stop moving",
+        "__collapse": true
+      },
+      "id": "f04c67c1-071a-4f63-b9cb-fdc7dd2a76ac"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "speed": 3,
+        "__collapse": true
+      },
+      "id": "313a68a2-4c48-4400-bed7-fba0d645e901"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Attack",
+        "loopAnim": false,
+        "__collapse": true
+      },
+      "id": "afacd278-ed7d-453e-9c1c-e0fc50c262e4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Attack",
+        "loopAnim": false,
+        "__collapse": true
+      },
+      "id": "8c9a2b99-a883-4517-8e13-a9b1f6bfc93c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 5
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "546715c5-8a82-41c8-b823-ca8f30f449ae"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "cf3c68c4-d6c5-4a1d-b34d-ffd05f0c236b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "2f6a6981-e43b-4913-8e2a-ee47cc345df3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "x": {
+          "type": "number",
+          "value": 104
+        },
+        "y": {
+          "type": "number",
+          "value": 74
+        },
+        "units": "pixels",
+        "__collapse": true
+      },
+      "id": "fd98dc59-d445-4202-962d-5baf8b53728f"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "3aaa8ca5-73ad-4a6a-a3ae-f4e719415966"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 15
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "868d01c5-ecbd-4670-bc6a-6f947743978d"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "badfd32b-4b03-4e44-bdad-1804fd0d76d8"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin jump"
+      },
+      "id": "f313d1fc-4907-4a50-917d-3dafd4c0d893"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai jump"
+      },
+      "id": "d58f79ec-2f30-467c-9468-fd6c3aa48306"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 8
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "caf499ae-d1ff-4cdc-96c3-2f5a9e2eac84"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin jump back"
+      },
+      "id": "c60fbe14-b587-45de-adc9-8e42e96cfd73"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai jump back"
+      },
+      "id": "c7b714f8-6d0d-4f41-a90a-efcc152117e4"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 40
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "43cccbd1-29c4-4893-bde3-b279d509aa4a"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin turn back"
+      },
+      "id": "d5b65c8a-af23-41e0-8cc7-350db251a915"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai turn back"
+      },
+      "id": "f6c97364-d987-4268-afe5-514005e8cc5d"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 4
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "97c285d5-46e4-4129-bacc-f93e7958d307"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "8320a49d-ef70-420b-abc8-73e3483e1e2e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "266c75bb-1837-4f0a-9842-32806e759539"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin idle"
+      },
+      "id": "6523a499-25fa-4fc7-909e-635e3359a133"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai idle"
+      },
+      "id": "1277d0df-1698-473f-9e4f-bad7a6718f6a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 60
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "0d1272c8-e3b3-4f9a-b544-9b8de26336aa"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai move left"
+      },
+      "id": "8cb3d0b8-adfb-4be7-b4e6-89e0da5c4e98"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 20
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "188f2341-06d5-478e-9539-dd9c066df7de"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left",
+          "a"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin move left"
+      },
+      "id": "d89c78df-4543-44fc-86cf-632944913cea"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 40
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "479c6ba7-f8cc-4be8-b653-dc2ffc5e9383"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin idle"
+      },
+      "id": "f6cd863c-206e-42ae-a1e8-c09590b1ad89"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai idle"
+      },
+      "id": "c75d1192-b7b2-4606-bbff-5212e01044fe"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "a6bbeff6-0691-4c14-ae5f-a773ffb25713"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 60
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "d46bdc73-f9ae-4741-8bfd-635added708a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "aea8c143-b58a-4852-b823-01f3a2dde6dc"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai move left"
+      },
+      "id": "7325fa0b-6297-4349-82a6-94e1cf87754e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "a8d3182e-ea3b-42e2-8846-eaef53b23658"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin idle"
+      },
+      "id": "b1c70b54-043b-4223-bf0a-3be4822c3418"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai idle"
+      },
+      "id": "e32f6240-74b5-40d4-a24d-7e8694c22797"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Attack",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "d8d5bfb8-cada-4c1f-8a68-70f456115740"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Attack",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "f47b5730-0290-4444-9087-f21703315704"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "x": {
+          "type": "number",
+          "value": 27
+        },
+        "y": {
+          "type": "number",
+          "value": 85
+        },
+        "units": "pixels",
+        "__collapse": true
+      },
+      "id": "eeb9f846-d89e-4a36-a0a1-eb09efa8c114"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "a31858ff-bf61-4d3a-bcef-c814512cb910"
+    },
+    {
+      "command": "EVENT_LOOP_FOR",
+      "args": {
+        "variable": "L0",
+        "from": {
+          "type": "number",
+          "value": 0
+        },
+        "comparison": "<=",
+        "to": {
+          "type": "number",
+          "value": 4
+        },
+        "operation": "+=",
+        "value": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.5
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              },
+              "units": "frames",
+              "__collapse": true
+            },
+            "id": "b530a08f-f235-437a-b734-15cde31c1594"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+              "x": {
+                "type": "number",
+                "value": 37
+              },
+              "y": {
+                "type": "number",
+                "value": 91
+              },
+              "units": "pixels",
+              "__collapse": true
+            },
+            "id": "57ee3894-3045-485c-8886-a7d8fc396967"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.5
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              },
+              "units": "frames",
+              "__collapse": true
+            },
+            "id": "4b15321d-c8c5-449b-a60e-85d12b8026b7"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+              "x": {
+                "type": "number",
+                "value": 33
+              },
+              "y": {
+                "type": "number",
+                "value": 84
+              },
+              "units": "pixels",
+              "__collapse": true
+            },
+            "id": "073dc31b-b572-4b5b-b6ee-782914acdad2"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.5
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              },
+              "units": "frames",
+              "__collapse": true
+            },
+            "id": "8687df1a-85d0-448e-8a39-8de044b76f9e"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+              "x": {
+                "type": "number",
+                "value": 36
+              },
+              "y": {
+                "type": "number",
+                "value": 81
+              },
+              "units": "pixels",
+              "__collapse": true
+            },
+            "id": "08e32cdc-4072-4ebc-9229-80837c41b193"
+          }
+        ]
+      },
+      "id": "0f073418-ca67-4ec8-9830-292ff2c68cd8"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "38dcb6f1-01f4-4b6d-8c9c-e9016a76eb78"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin jump"
+      },
+      "id": "521454bd-9028-4b2d-b4c1-632d1df14fc7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "992f00cd-960b-4b8d-8c45-8c3e117bc7c7"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 20
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "e50b5d6d-aeb6-430e-8b59-33a1336a3549"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "473c310e-a293-4922-8828-7c6b0f89b6e9"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai move right"
+      },
+      "id": "888917e6-70ed-482c-96e1-ca371bd84ae8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 40
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "96a11a5f-8260-4703-9808-af9be1b468b3"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin turn left"
+      },
+      "id": "baf53a1d-7300-4b5c-b207-3cd0e190828d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "183b4687-cd06-4fce-ad60-99421a0524b5"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 8
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "0bd8194e-659b-4b86-b446-04dcfca7d2cd"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin idle"
+      },
+      "id": "688a69a1-f09a-477b-917d-3dc04d89f886"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai idle"
+      },
+      "id": "54f93abc-5ce1-4532-80b1-5d9f011de0ab"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "splitOut",
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "distance": 16,
+        "speed": 2,
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "f61ccdcb-ead3-4ae8-a1d4-ab08304363a0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "__collapse": true
+      },
+      "id": "9dd7f4a7-dfce-4bae-a2ed-09bbfec5354d"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "splitIn",
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "distance": 16,
+        "speed": 4,
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "58c934c4-4998-4bcb-9e7a-50a17cc9814e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 8
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "19c4fa11-2c55-425f-bc1d-58f5f129e2c9"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai move right"
+      },
+      "id": "00518c4a-b231-4265-9b0c-0b6bacb83d91"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin move left"
+      },
+      "id": "7f8ba7ec-e6e5-496d-9a4e-ac3fe1a4262e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 8
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "723365e8-b61d-49df-beb6-5e7182e2861d"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin idle"
+      },
+      "id": "66280efa-e72b-4d7b-80bb-e8f67828432c"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai idle"
+      },
+      "id": "b0127ae6-9d93-489e-aba3-cd1e2a3341b5"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "x": {
+          "type": "number",
+          "value": 30
+        },
+        "y": {
+          "type": "number",
+          "value": 85
+        },
+        "units": "pixels",
+        "__collapse": true
+      },
+      "id": "182a6734-b69f-4c32-b6da-ffb4fb4c0ab4"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "115b7eab-feb7-43cc-81c8-52b6bf561d2f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "04a87f01-2c24-405d-b60b-9bc49ed06ec6"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "ca3044c4-3068-4390-9b09-c3cb1bf233a9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "da489505-78a4-41e6-ad27-5c2f8f23417a"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin jump"
+      },
+      "id": "69a6a90a-63c9-4360-aa31-714d6c861955"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 8
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "205ad705-9f03-436a-9ddd-3229c1f50ca1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "18b20286-138f-4ecc-8f59-59be111bfbba"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "fff06695-bcf3-489d-82a5-7aab1a377bc0"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin idle"
+      },
+      "id": "4a7d6239-4eb4-4d9c-9295-2d62d30d4bdd"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "5a5902ce-ec1d-469b-8cef-c5dd3b218317"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "speed": 0,
+        "__collapse": true
+      },
+      "id": "27c35229-9670-40d2-aae5-d894f9c16876"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Charging",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "602f5d05-ae62-4e9f-8273-773357bd48a1"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "vertical",
+        "magnitude": {
+          "type": "number",
+          "value": 4
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "b705911e-e48e-4f60-8863-64d711a4a2ee"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin jump"
+      },
+      "id": "01ba727a-7ce0-4929-b442-4f24777aea93"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "bf9c232d-3c15-4d41-a33a-7c8cf6c3d7b9"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin idle"
+      },
+      "id": "a9abc387-3d0f-4a57-b834-1fe5d9cf7e46"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "8cb899c7-b5ec-4061-b7da-c75b5e455e72"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "right",
+          "b"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai right"
+      },
+      "id": "0d11d63d-8158-43cc-bc0a-63972f8b104a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "speed": 0,
+        "__collapse": true
+      },
+      "id": "7911e595-3237-41f6-a4d4-2ce9b6bb8660"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Charging",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "f8a4bc21-2fa3-461b-bfc7-ae1aa29ee67c"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 10,
+        "shakeDirection": "vertical",
+        "magnitude": {
+          "type": "number",
+          "value": 4
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "7f2c721d-40e8-4823-8cd0-17f62714dab1"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left",
+          "b"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Roning Left"
+      },
+      "id": "bb90b75b-5df8-4020-94e9-76a39d122151"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "a7e4dd44-ae89-418b-9baa-75b858d86c75"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin idle"
+      },
+      "id": "2a86b01e-d8ee-40eb-816e-eb1cdfedee8e"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai idle"
+      },
+      "id": "28cadd82-8d8e-4031-b093-58662eeeb7b7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "speed": 1,
+        "__collapse": true
+      },
+      "id": "03d0e61a-29d6-448c-acea-140a127f34a1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "speed": 1,
+        "__collapse": true
+      },
+      "id": "a7e4b565-ed76-4357-8f64-bc38f9fbde39"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Attack",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "1726fa02-3b13-4850-be5e-286e9730b952"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Attack",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "fce4adc6-4b57-437a-90cd-4aaac992df6b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "x": {
+          "type": "number",
+          "value": 93
+        },
+        "y": {
+          "type": "number",
+          "value": 72
+        },
+        "units": "pixels",
+        "__collapse": true
+      },
+      "id": "dc97f5f3-c1ba-4700-999b-4f2939b11993"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "f2fe2b8d-6b1d-45da-9f96-e3cd57306e07"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 120
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "9b02727e-385e-4abe-8d1c-8e7592b3c04c"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "9bdd3ef2-7156-4777-bcbc-fa8f53cfc555"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "5642480e-6d18-4495-ad57-2dc5225cd5fc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "4c670a0e-7934-4041-b51a-84ac7dce2b8f"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left",
+          "b"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Roning Left"
+      },
+      "id": "1afa5943-cc13-40ef-833c-62e5c2006a5d"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "b",
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai Left"
+      },
+      "id": "52b14308-eda2-4a64-90b8-b3700723e12c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 20
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "1808b80c-e642-48cd-988a-4ef0a54dfd86"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Roning Right"
+      },
+      "id": "33ba4d75-c9f2-4beb-8706-3d183a3a7b55"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai Left"
+      },
+      "id": "b391d8eb-fa69-4257-9782-8fa533c019b2"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 4
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "ed02d065-37dd-4a3b-be88-914b6047dd74"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin idle"
+      },
+      "id": "2ead9858-38e2-4a89-bc5f-371a91f68f92"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai idle"
+      },
+      "id": "c2401215-00ec-47b0-91ed-52499826c084"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 4
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "28dcef4f-5ac1-4e2d-bbd6-998f2f259a1c"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai Left"
+      },
+      "id": "d98bbe53-5df6-49b6-9a9b-563bde8c4c3f"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 8
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "ebe67131-a8c5-4a34-bb8e-e1f2c87a4b99"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai idle"
+      },
+      "id": "64a56d97-0825-4ad0-9aff-71c136ef9af4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Attack",
+        "loopAnim": false,
+        "__collapse": true
+      },
+      "id": "e9fa078d-45b6-4136-b547-25a1a0f1aef2"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin jump"
+      },
+      "id": "22bc1ca8-7399-448e-869e-55cb7e41338c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "00f96934-1a5e-4d3f-acd1-e2bfc9b98145"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "6c92aa76-e78d-4670-adc2-cac66377f9c5"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai Left"
+      },
+      "id": "2fd1e507-efce-4ac9-8d5f-32a94bf612a8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "62f3ee47-8501-4780-a3e4-56fdd06221b4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Crouch",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "09b9a312-63f1-42e8-a6c8-e41534a0d62b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Attack",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "6f46c494-f8f0-42ff-818e-42e01bb48bbb"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 60
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "25e3e07b-a842-48ec-bfb8-5ac7ce8eb8d5"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin idle"
+      },
+      "id": "9f11d876-c0c2-4c78-9cf1-f08390c704e8"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai idle"
+      },
+      "id": "136eaca4-6b35-4917-9cdd-c78cc09bb449"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "960a0595-84bc-4059-b97a-3d483edb3920"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "5376c767-b5b4-4e30-b93f-a999772ae7f1"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "29084302-29d8-4349-9742-0ad55006f293"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "speed": 0,
+        "__collapse": true
+      },
+      "id": "182314fb-001f-4162-a926-80b13ed05ab4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Charging",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "0dea94ac-93b0-4ffa-9243-c051ec7f072d"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "right",
+          "a",
+          "b"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai jump"
+      },
+      "id": "8360d072-d320-4ed8-b570-affae1039a49"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Crouch",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "b05b5228-2830-41b6-9433-c8a304fe9ba8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 60
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "92fe86db-ff9e-4e79-bd9a-5d14dd8b5198"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b",
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai jump"
+      },
+      "id": "7ba40517-28c0-48d9-ad1b-625129ef4b89"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 15
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "e5d05729-2dad-43f8-8995-405bdcb74c9b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "speed": 3,
+        "__collapse": true
+      },
+      "id": "ffa99373-ecce-4a75-8e67-4f68aa004126"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "a17a6405-9d52-46c2-812e-271cf412108c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 15
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "68999689-daac-40eb-aa85-4c3445f2a706"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai jump"
+      },
+      "id": "331fcd98-3036-49a5-85d6-755171ef16ae"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 15
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "4c9a8a6e-cac4-40c1-ba50-9ce5e3c9df06"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Attack",
+        "loopAnim": false,
+        "__collapse": true
+      },
+      "id": "0cb38215-5b4a-4ffd-83aa-53d5534f7442"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 8
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "244c9e7f-8773-4246-a046-de2402d0be54"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "36a4e903-8886-4d42-8eb3-0709281cf2b3"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "splitOut",
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "distance": 16,
+        "speed": 2,
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "171d56f5-51be-4f0e-9234-bfa814a46a0c"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "__collapse": true
+      },
+      "id": "62ebbd21-208a-4f8c-9326-a8384727a1a7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        },
+        "__collapse": true
+      },
+      "id": "213f3fb3-9a1a-448a-83eb-eb5feaa79994"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Attack",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "ca720d4b-1f38-44c3-8961-e79145873db3"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "splitIn",
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "distance": 16,
+        "speed": 2,
+        "time": 0.5,
+        "frames": 30,
+        "__collapse": true
+      },
+      "id": "35c98899-57fa-4131-8a54-cf9f2d77ed4e"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 15
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "8f9da14b-1cc9-439b-9abb-d04fbea6475a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "speed": 3,
+        "__collapse": true
+      },
+      "id": "33235f7c-1433-4d14-ae15-1ea8b3f0a0ab"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Attack",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "efecaf80-4324-462b-99e5-cb33ed132b6d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "x": {
+          "type": "number",
+          "value": 12
+        },
+        "y": {
+          "type": "number",
+          "value": 87
+        },
+        "units": "pixels",
+        "__collapse": true
+      },
+      "id": "e390e0c8-a713-402e-bb74-f166fd7d11bc"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "d3658c34-0f2f-4f7d-bf24-57132162aaa8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 120
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "7efc7df8-91b4-40eb-8900-5461ae615231"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "9a56ec32-2c49-42ca-bce9-6bddb536a082",
+        "__collapse": true
+      },
+      "id": "3eb52c9e-dd21-4a76-97c4-51d1b2cb4763"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "c2b3bebd-b7d3-45d6-b340-b2af393a364f",
+        "spriteStateId": "Defend",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "4497a6da-81b3-4c32-8d17-b8a0f36ccc9b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "speed": 0,
+        "__collapse": true
+      },
+      "id": "62239115-695f-44b0-a7f4-a7bf8d8ca9e7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "13421be8-5f26-47e5-ac02-843bbe87c9e1",
+        "spriteStateId": "Charging",
+        "loopAnim": true,
+        "__collapse": true
+      },
+      "id": "9572fbb3-a83f-468f-97c8-542f53c83150"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "a",
+          "b",
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "Ronin jump"
+      },
+      "id": "d0b5330e-6dcd-4ad0-9545-922d675d1b47"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        },
+        "__collapse": true
+      },
+      "id": "02566cc9-d433-4556-83cf-a95e6a4cb255"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 30
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "0d9d37d7-f7a0-4991-8dde-7470d7122e84"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [],
+        "playerId": {
+          "type": "number",
+          "value": 0
+        },
+        "__collapse": true,
+        "__label": "ROnin idle"
+      },
+      "id": "3468e665-51d8-452c-8c35-f9dee6d29d05"
+    },
+    {
+      "command": "EVENT_SET_SIMULATED_INPUT",
+      "args": {
+        "input": [
+          "b",
+          "right"
+        ],
+        "playerId": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true,
+        "__label": "Samurai run right"
+      },
+      "id": "e60645fe-511c-4f89-9b30-92e51cf3f616"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.5
+        },
+        "frames": {
+          "type": "number",
+          "value": 60
+        },
+        "units": "frames",
+        "__collapse": true
+      },
+      "id": "02dd8de0-73ac-43a4-95a1-9d2b9e8eca70"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "bb0e6825-b82a-411f-a5f6-c806a0a14ceb",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2",
+        "__collapse": true
+      },
+      "id": "3240e18c-f6f8-4edb-b7c5-6311a167bf04"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0011c+40!60!0f3+70!50!0011+20!0f7+30!008+0f7d+"
+}

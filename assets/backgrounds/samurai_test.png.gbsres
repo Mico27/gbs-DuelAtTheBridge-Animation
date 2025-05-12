@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "731d9209-bff8-45c1-ad4c-1737b0e5bb92",
+  "name": "samurai_test",
+  "symbol": "bg_samurai_test",
+  "tileColors": "0134+002+0112+003+0111+004+0110+005+01f+006+01e+007+01c+009+01b+009+01b+008+01c+008+01b+007+012+00!01a+007+012+00!01a+007+012+00!01a+00!01!006+01!00!01c+008+01a+00a+0114+",
+  "filename": "samurai_test.png",
+  "width": 20,
+  "height": 19,
+  "imageWidth": 160,
+  "imageHeight": 152
+}

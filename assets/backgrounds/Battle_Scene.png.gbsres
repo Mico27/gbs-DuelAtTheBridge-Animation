@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "03e2fafb-9f20-4e11-b446-f0341bbda4a3",
+  "name": "Battle_Scene",
+  "symbol": "bg_battle_scene",
+  "tileColors": "8732+014b+0085+829+00f+82b+007+803+002+802+82b+802+002+80b+039+8010+049+80f+83!049+83!807+8732+",
+  "filename": "Battle_Scene.png",
+  "width": 25,
+  "height": 18,
+  "imageWidth": 200,
+  "imageHeight": 144
+}

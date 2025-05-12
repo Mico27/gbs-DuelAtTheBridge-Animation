@@ -1,0 +1,27 @@
+{
+  "_resourceType": "scene",
+  "id": "919d883c-c14a-46f8-9030-f0dcd4f15c73",
+  "_index": 7,
+  "name": "Scene 8",
+  "backgroundId": "693793d6-73b2-465f-8c1c-a58032207c76",
+  "tilesetId": "4e9805df-ed68-42b7-93f9-31f3d1cdfb5d",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "6d53056b-8cf1-4e91-9c8a-96f7da33fe74",
+    "80d85a4c-41e7-4227-8ed9-fb8feab62516",
+    "a124592e-e6a7-4088-af06-1fb53bc29051"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_8",
+  "x": 592,
+  "y": 384,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}
